@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чат с комментариями</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="chat">
+      <div class="chat__form">
+        <h2 class="chat__title">Оставьте ваш комментарий</h2>
+        <label class="chat__label">
+          Введите ваше имя:
+          <input
+            id="nameInput"
+            type="text"
+            class="chat__input chat__input--name"
+          />
+        </label>
+        <label class="chat__label">
+          Введите ссылку на аватар:
+          <input
+            id="avatar"
+            type="text"
+            class="chat__input chat__input--avatar"
+          />
+        </label>
+        <label class="chat__label">
+          Оставьте комментарий:
+          <textarea id="messageInput" class="chat__textarea"></textarea>
+        </label>
+        <button class="chat__button">Отправить</button>
+      </div>
+
+      <div class="chat__messages">
+        <h2 class="chat__title">Чат</h2>
+        <div class="chat__message">
+          <img id="avatarChat" src="" />
+          <div id="box">
+            <p class="chat__user"></p>
+            <p id="messageOutput" class="chat__comment"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

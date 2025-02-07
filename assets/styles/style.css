@@ -98,4 +98,10 @@ body {
 
 .chat__comment {
   margin-top: 5px;
+  word-wrap: break-word;
+}
+
+.chat__date {
+  margin-top: 5px;
+  font-size: 12px;
 }
